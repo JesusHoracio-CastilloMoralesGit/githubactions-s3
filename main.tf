@@ -2,7 +2,6 @@ terraform {
   required_providers {
     aws = {
         source = "hashicorp/aws"
-        version = "~>7.1.3"
     }
   }
   backend "s3" {
@@ -11,4 +10,8 @@ terraform {
     dynamodb_table = "tato-terraform-state-lock"
     region = "us-east-1"
   }
+}
+
+provider "aws" {
+  profile = "admin-general"
 }
