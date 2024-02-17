@@ -11,6 +11,10 @@ jobs:
       name: Staging
     steps:
 
+    - name: '"Configure AWS Credentials" Action for GitHub Actions'
+      run: node20
+
+
     - name: Check out repository
       uses: actions/checkout@v4
 
