@@ -13,7 +13,7 @@ terraform {
 }
 
 provider "aws" {
-  profile = "admin-general"
+  #profile = "admin-general"
   region = "us-east-1"
 }
 
