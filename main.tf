@@ -25,7 +25,7 @@ module "s3" {
       name = "folompo"
     },
     "bucket2" = {
-        name = "loko"
+        name = "rotoche"
     }
 }
 }
