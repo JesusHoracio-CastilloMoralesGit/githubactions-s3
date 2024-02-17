@@ -16,3 +16,8 @@ provider "aws" {
   profile = "admin-general"
   region = "us-east-1"
 }
+
+module "s3" {
+  source = "./aws-modules/s3"
+ bucket_names = ["locochon", "animal32"]
+}
