@@ -59,10 +59,10 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ secrets.AWS_REGION }}
 
-    # - name: Setup Terraform
-    #   uses: hashicorp/setup-terraform@v3
-    #   with: 
-    #     terraform_version: 1.7.3
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+      with: 
+        terraform_version: 1.7.3
 
     - name: Terraform init
       id: init

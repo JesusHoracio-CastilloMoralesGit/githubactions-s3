@@ -19,5 +19,5 @@ provider "aws" {
 
 module "s3" {
   source = "./aws-modules/s3"
- bucket_names = ["locochon", "animal32"]
+  bucket_configurations = var.bucket_configurations
 }

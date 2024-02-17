@@ -1,3 +1,4 @@
-variable "bucket_names" {
-  type = list(string)
+variable "bucket_configurations" {
+  description = "The name of the S3 bucket"
+  type        = list(string)
 }
