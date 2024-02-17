@@ -19,5 +19,13 @@ provider "aws" {
 
 module "s3" {
   source = "./aws-modules/s3"
-  bucket_configurations = var.bucket_configurations
+  bucket_configurations  = {
+  
+  "bucket1" = {
+      name = "folompo"
+    },
+    "bucket2" = {
+        name = "loko"
+    }
+}
 }

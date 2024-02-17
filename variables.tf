@@ -1,5 +1,6 @@
-variable "bucket_configurations" {
-  description = "The name of the S3 bucket"
-  type        = list(string)
-  default = [ "loko", "folompo" ]
-}
+# variable "bucket_configurations" {
+#   description = "A map of configurations for the S3 buckets"
+#   type        = map(object({
+#     name = string
+#   }))
+# }
